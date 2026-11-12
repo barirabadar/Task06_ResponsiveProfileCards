@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4efff;
+    color: #302442;
+    padding: 50px 7%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    color: #8963c7;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 38px;
+    margin: 12px 0;
+    color: #392854;
+}
+
+.intro {
+    color: #777;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1;
+    background: white;
+    padding: 30px 22px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(60, 35, 90, 0.10);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(60, 35, 90, 0.18);
+}
+
+.card img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #e9ddff;
+}
+
+.card h2 {
+    margin-top: 18px;
+    font-size: 22px;
+}
+
+.card h4 {
+    color: #8963c7;
+    margin-top: 7px;
+}
+
+.card p {
+    margin: 15px 0;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 20px 0;
+}
+
+.skills span {
+    background: #f0e8ff;
+    color: #7651b2;
+    padding: 8px 11px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+button {
+    background: #8963c7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #63419e;
+}
+
+.extra {
+    background: #f7f2ff;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #8963c7;
+}
+
+@media (max-width: 850px) {
+    .profiles {
+       flex-wrap: wrap;
+    }
+
+    .card {
+       flex: 1 1 280px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+       padding: 30px 6%;
+    }
+
+    h1 {
+       font-size: 28px;
+    }
+
+    .profiles {
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .card {
+       width: 100%;
+       max-width: 390px;
+    }
+}
